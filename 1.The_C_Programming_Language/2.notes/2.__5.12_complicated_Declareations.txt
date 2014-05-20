@@ -1,0 +1,7 @@
+1. char (*(*x())[]) ()
+Description:
+(1) a function: x()
+(2) a function returning pointer: *(1) = *x()
+(3) a function returning pointer to array: (2)[] = (*x())[]
+(4) a function returning pointer to an array of pointers: *(2)[] = * (*x()) []
+(5) a function returning pointer to an array of pointers to functions return char: char (4) () =  char (* (*x()) []) ()
