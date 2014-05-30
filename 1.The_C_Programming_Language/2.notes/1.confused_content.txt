@@ -1,2 +1,2 @@
-1. section 4.10, quicksort algorithm.
+1. section 4.10, quicksort algorithm. // OK 
 
