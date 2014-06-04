@@ -18,7 +18,7 @@ void shellsort(int v[], int n)
 			for(j= i-gap; j>=0 && v[j] > v[j+gap]; j-=gap)
 			{
 				swap(&v[j], &v[j+gap]);
-				print_line_show_swap(v, n, j, j+gap);
+//				print_line_show_swap(v, n, j, j+gap);
 			}
 }
 void swap (int *a, int *b)
@@ -32,14 +32,14 @@ void swap (int *a, int *b)
 
 int main(void)
 {
-#define NUM 20
+#define NUM  0xffff
 	int a[NUM];
 	int i;
 
 	for(i=0; i< NUM; i++)
 	{	
-		a[i] = rand() % 100;
-		printf("%4d", a[i]);
+		a[i] = rand() % 100000;
+		printf("%7d", a[i]);
 	}
 	printf("\n");
 
@@ -57,18 +57,22 @@ void print(int a[], int n)
 	int i;
 
 	for(i=0; i<n; i++)
-		printf("%4d", a[i]);
+		printf("%7d", a[i]);
 	printf("\n");
 }
 
-void print_line_show_swap(int a[], int n, int left, int right)
+/*
+ * Description: print colorful contants, which uses the bash prompt.
+ */
+void print_line_show_swap(int a[], int n, int sa, int sb)
 {
 	int i;
-
+	printf("sa=%d, sb = %d.\n", sa, sb);
 	for(i=0; i<n; i++)
-		if(i==left || i == right)
-			printf("\033[1;32m%4d\033[0m", a[i]);
+		if(i==sa || i == sb)
+			printf("\033[1;32m%7d\033[0m", a[i]);
 		else
-			printf("%4d", a[i]);
+			printf("%7d", a[i]);
 	printf("\n");
 }
+

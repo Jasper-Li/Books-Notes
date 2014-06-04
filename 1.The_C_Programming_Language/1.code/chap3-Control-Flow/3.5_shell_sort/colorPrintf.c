@@ -1,3 +1,6 @@
+/*
+ * Description: print colorful contants, which uses the bash prompt.
+ */
 #include<stdio.h>
 int main(void)
 {
