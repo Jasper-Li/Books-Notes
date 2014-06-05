@@ -1,0 +1,5 @@
+ANSI standard. Although we have noted the places where the language has
+aAppendix A, the reference manual, is not the standard, but our attempt to
+As we said in the preface to the first edition, C ``wears well as one's
+aBrian W. Kernighan Dennis M. Ritchie
+

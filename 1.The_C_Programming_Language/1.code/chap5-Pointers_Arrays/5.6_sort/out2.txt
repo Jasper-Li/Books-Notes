@@ -1,0 +1,16 @@
+The original:
+#####start#####
+ANSI standard. Although we have noted the places where the language has
+aaAppendix A, the reference manual, is not the standard, but our attempt to
+As we said in the preface to the first edition, C ``wears well as one's
+1aBrian W. Kernighan Dennis M. Ritchie
+
+#####end#####
+The result:
+#####start#####
+
+ANSI standard. Although we have noted the places where the language has
+aAs we said in the preface to the first edition, C ``wears well as one's
+1aAppendix A, the reference manual, is not the standard, but our attempt to
+aBrian W. Kernighan Dennis M. Ritchie
+#####end#####
