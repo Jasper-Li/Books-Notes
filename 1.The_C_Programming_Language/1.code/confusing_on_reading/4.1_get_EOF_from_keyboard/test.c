@@ -1,7 +1,7 @@
 /*
 * Description: This program tests how to input an 'EOF' from keyboard.
 * Test environment: Win7 64-bit CMD
-* Test result: input ctrl+Z of F6 in a single line, and press Enter.
+* Test result: input ctrl+Z or F6 in a single line, and press Enter.
 * Version: 1.0 
 * Date: 2014.05.15
 * Author: Jasper Li
