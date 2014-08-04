@@ -1,2 +1,0 @@
-yes.
-Beacause the variable dataVale is declared as an id object type, which can be used to hold any type of object in the program.

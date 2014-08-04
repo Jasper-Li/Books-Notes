@@ -1,1 +1,0 @@
-clang -o main main.m -lgnustep-base -lobjc -I /usr/local/include/ -L /usr/local/lib/
