@@ -1,0 +1,8 @@
+Fraction.m:9:13: error: synthesized property 'numerator' must either be named the same as a compatible ivar or must explicitly name an ivar
+@synthesize numerator, denominator;
+            ^
+	    Fraction.m:9:24: error: synthesized property 'denominator' must either be named the same as a compatible ivar or must explicitly name an ivar
+	    @synthesize numerator, denominator;
+	                           ^
+				   2 errors generated.
+

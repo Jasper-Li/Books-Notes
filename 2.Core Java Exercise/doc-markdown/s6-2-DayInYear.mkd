@@ -1,0 +1,120 @@
+###1. Exercise
+Get the indicating number for year, month and day, then print the day num    ber within the current year.
+###2. Smali Code
+####2.1 Class Structure
+	.class public LDayInYear;
+	.super Ljava/lang/Object;
+	.source "DayInYear.java"
+	
+	.field static day:I
+	.field static month:I
+	.field static year:I
+	
+	.method public constructor <init>()V
+	
+	.method public static calculateDay()I
+
+	.method public static checkDate()Z
+	
+	.method public static getDate()V
+	
+	.method public static main([Ljava/lang/String;)V
+	
+	.method public static setDate(III)V
+####2.2 main method
+#####2.2.1 smali code
+
+	.method public static main([Ljava/lang/String;)V
+		.registers 7
+
+		.prologue
+		const/4 v5, 0x1
+
+		invoke-static {}, LDayInYear;->getDate()V
+
+		invoke-static {}, LDayInYear;->checkDate()Z
+
+		move-result v0
+
+		if-ne v0, v5, :cond_42
+
+		sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+		const-string v1, "%d, %d, %d: It is the %d day within year %d.\n"
+
+		const/4 v2, 0x5
+
+		new-array v2, v2, [Ljava/lang/Object;
+
+		const/4 v3, 0x0
+
+		sget v4, LDayInYear;->year:I
+
+		invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+		move-result-object v4
+
+		aput-object v4, v2, v3
+
+		sget v3, LDayInYear;->month:I
+
+		invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+		move-result-object v3
+
+		aput-object v3, v2, v5
+
+		const/4 v3, 0x2
+
+		sget v4, LDayInYear;->day:I
+
+		invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+		move-result-object v4
+
+		aput-object v4, v2, v3
+
+		const/4 v3, 0x3
+
+		invoke-static {}, LDayInYear;->calculateDay()I
+
+		move-result v4
+
+		invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+		move-result-object v4
+
+		aput-object v4, v2, v3
+
+		const/4 v3, 0x4
+
+		sget v4, LDayInYear;->year:I
+
+		invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+		move-result-object v4
+
+		aput-object v4, v2, v3
+
+		invoke-virtual {v0, v1, v2}, Ljava/io/PrintStream;->printf(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;
+
+		:cond_42
+		return-void
+	.end method
+#####2.2.2 pseudo code
+	public static void main(String[] args)
+	{
+		v5 = 1;
+		
+		getDate();
+
+		if(checkDate ==1 )
+		{
+			System.out.printf("%d, %d, %d: It is the %d day within year %d.\n", year, month, day, calculateDay(), year);
+		}
+
+		return void;
+
+	}
+####2.3 getDate method
+

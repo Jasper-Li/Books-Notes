@@ -1,0 +1,62 @@
+1. stat
+(1) 
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+int stat(const char *path, struct stat *buf);
+
+(2)
+struct stat {
+               dev_t     st_dev;     /* ID of device containing file */
+               ino_t     st_ino;     /* inode number */
+               mode_t    st_mode;    /* protection */
+               nlink_t   st_nlink;   /* number of hard links */
+               uid_t     st_uid;     /* user ID of owner */
+               gid_t     st_gid;     /* group ID of owner */
+               dev_t     st_rdev;    /* device ID (if special file) */
+               off_t     st_size;    /* total size, in bytes */
+               blksize_t st_blksize; /* blocksize for file system I/O */
+               blkcnt_t  st_blocks;  /* number of 512B blocks allocated */
+               time_t    st_atime;   /* time of last access */
+               time_t    st_mtime;   /* time of last modification */
+               time_t    st_ctime;   /* time of last status change */
+           };
+2. opendir
+(1)
+#include <sys/types.h>
+#include <dirent.h>
+
+DIR *opendir(const char *name);
+(2)
+RETURN VALUE
+       The  opendir()  and  fdopendir() functions return a pointer to the directory stream.  On error, NULL is returned, and errno is set appropri‐
+       ately.
+
+
+3. closedir
+(1)
+int closedir(DIR *dirp);
+(2)
+RETURN VALUE
+       The closedir() function returns 0 on success.  On error, -1 is returned, and errno is set appropriately.
+
+4. readdir
+(1)
+ #include <dirent.h>
+struct dirent *readdir(DIR *dirp);
+(2)
+RETURN VALUE
+       On success, readdir() returns a pointer to a dirent structure.  (This structure may be statically allocated; do not attempt to free(3)  it.)
+       If the end of the directory stream is reached, NULL is returned and errno is not changed.  If an error occurs, NULL is returned and errno is
+       set appropriately.
+(3)
+ struct dirent {
+               ino_t          d_ino;       /* inode number */
+               off_t          d_off;       /* offset to the next dirent */
+               unsigned short d_reclen;    /* length of this record */
+               unsigned char  d_type;      /* type of file; not supported
+                                              by all file system types */
+               char           d_name[256]; /* filename */
+           };
+
+
