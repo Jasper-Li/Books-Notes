@@ -1,0 +1,10 @@
+1. Identify the hierarchical relationship between the NSObject class, ClassA ClassB, and ClassB2
+NSObject
+	|--- ClassA
+		|--- ClassB
+		|--- ClassB2
+
+2. What is the superclass of ClassB? ClassA
+3. What is the superclass of ClassB2a? ClassA
+4. How many subclasses can a class have, and how many superclasses can it have? more, one.
+

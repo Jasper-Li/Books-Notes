@@ -1,0 +1,5 @@
+gcc  hello.m `gnustep-config --objc-flags` -lgnustep-base  -o hello
+
+ clang -o FractionTest Fraction.m main.m -lgnustep-base -lobjc -I /usr/local/include/ -L /usr/local/lib/ 
+ 
+ -fobjc-nonfragile-abi // use objective-2.0 
