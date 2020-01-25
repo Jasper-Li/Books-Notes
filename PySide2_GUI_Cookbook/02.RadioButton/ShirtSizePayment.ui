@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>331</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Choose your Shirt Size</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>140</y>
+     <width>331</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Choose your payment method</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelSelected">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>361</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>43</width>
+     <height>84</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayoutSize">
+    <item>
+     <widget class="QRadioButton" name="radioButtonM">
+      <property name="text">
+       <string>M</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButtonL">
+      <property name="text">
+       <string>L</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButtonXL">
+      <property name="text">
+       <string>XL</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButtonXXL">
+      <property name="text">
+       <string>XXL</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>170</y>
+     <width>127</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayoutPayment">
+    <item>
+     <widget class="QRadioButton" name="radioButtonCard">
+      <property name="text">
+       <string>Debit/Credit Card</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButtonNetBanking">
+      <property name="text">
+       <string>Net Banking</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButtonCashOnDelivery">
+      <property name="text">
+       <string>Cash on Delivery</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
