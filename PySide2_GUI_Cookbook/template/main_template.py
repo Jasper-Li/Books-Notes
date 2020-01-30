@@ -1,5 +1,11 @@
+# standard lib
 import sys
+from pdb import set_trace
+
+# 3rdparty lib
 from PySide2.QtWidgets import QApplication, QDialog
+
+# custom lib
 from ui_template import Ui_Dialog
 
 class MainWindow(QDialog):
