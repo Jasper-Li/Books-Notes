@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>404</width>
+    <height>422</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>270</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelResp">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>325</y>
+     <width>331</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="wordWrap">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelName">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Student name</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditName">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>70</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Adam</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelID">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>80</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Student ID</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditID">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4527</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelHistoryMark">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>110</y>
+     <width>96</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>History Mark</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditGeogMark">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>150</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>95</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelGeogMark">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>112</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Geogrophy Mark</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditHistoryMark">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>110</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>90</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelHistoryMark_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>190</y>
+     <width>88</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Total Marks</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditPercentage">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>230</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditTotalMarks">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>190</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelGeogMark_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>230</y>
+     <width>80</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Percentage</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
