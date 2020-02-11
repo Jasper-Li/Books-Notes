@@ -16,7 +16,8 @@ class MainWindow(QDialog):
         self.ui.fontComboBox.currentFontChanged.connect(self.change_font)
     def change_font(self):
         font =  self.ui.fontComboBox.currentFont()
-        self.ui.textEdit.setCurrentFont(font)
+        #print(font)
+        self.ui.textEdit.setFont(font)
 
 if __name__ == '__main__':
     app = QApplication([])
