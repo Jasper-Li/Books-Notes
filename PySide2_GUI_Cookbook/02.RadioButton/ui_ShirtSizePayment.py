@@ -3,23 +3,24 @@
 ################################################################################
 ## Form generated from reading UI file 'ShirtSizePayment.ui'
 ##
-## Created by: Qt User Interface Compiler version 5.14.0
+## Created by: Qt User Interface Compiler version 5.14.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
 from PySide2.QtCore import (QCoreApplication, QMetaObject, QObject, QPoint,
     QRect, QSize, QUrl, Qt)
-from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QFont,
+from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
     QFontDatabase, QIcon, QLinearGradient, QPalette, QPainter, QPixmap,
     QRadialGradient)
 from PySide2.QtWidgets import *
+
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
         if Dialog.objectName():
             Dialog.setObjectName(u"Dialog")
-        Dialog.resize(400, 300)
+        Dialog.resize(400, 352)
         self.label = QLabel(Dialog)
         self.label.setObjectName(u"label")
         self.label.setGeometry(QRect(10, 20, 331, 16))
@@ -28,50 +29,50 @@ class Ui_Dialog(object):
         self.label_2.setGeometry(QRect(10, 140, 331, 16))
         self.labelSelected = QLabel(Dialog)
         self.labelSelected.setObjectName(u"labelSelected")
-        self.labelSelected.setGeometry(QRect(10, 260, 361, 16))
-        self.widget = QWidget(Dialog)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(30, 40, 43, 84))
-        self.verticalLayoutSize = QVBoxLayout(self.widget)
+        self.labelSelected.setGeometry(QRect(20, 260, 351, 51))
+        self.layoutWidget = QWidget(Dialog)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(30, 40, 53, 96))
+        self.verticalLayoutSize = QVBoxLayout(self.layoutWidget)
         self.verticalLayoutSize.setObjectName(u"verticalLayoutSize")
         self.verticalLayoutSize.setContentsMargins(0, 0, 0, 0)
-        self.radioButtonM = QRadioButton(self.widget)
+        self.radioButtonM = QRadioButton(self.layoutWidget)
         self.radioButtonM.setObjectName(u"radioButtonM")
 
         self.verticalLayoutSize.addWidget(self.radioButtonM)
 
-        self.radioButtonL = QRadioButton(self.widget)
+        self.radioButtonL = QRadioButton(self.layoutWidget)
         self.radioButtonL.setObjectName(u"radioButtonL")
 
         self.verticalLayoutSize.addWidget(self.radioButtonL)
 
-        self.radioButtonXL = QRadioButton(self.widget)
+        self.radioButtonXL = QRadioButton(self.layoutWidget)
         self.radioButtonXL.setObjectName(u"radioButtonXL")
 
         self.verticalLayoutSize.addWidget(self.radioButtonXL)
 
-        self.radioButtonXXL = QRadioButton(self.widget)
+        self.radioButtonXXL = QRadioButton(self.layoutWidget)
         self.radioButtonXXL.setObjectName(u"radioButtonXXL")
 
         self.verticalLayoutSize.addWidget(self.radioButtonXXL)
 
-        self.widget1 = QWidget(Dialog)
-        self.widget1.setObjectName(u"widget1")
-        self.widget1.setGeometry(QRect(30, 170, 127, 62))
-        self.verticalLayoutPayment = QVBoxLayout(self.widget1)
+        self.layoutWidget1 = QWidget(Dialog)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(30, 170, 165, 71))
+        self.verticalLayoutPayment = QVBoxLayout(self.layoutWidget1)
         self.verticalLayoutPayment.setObjectName(u"verticalLayoutPayment")
         self.verticalLayoutPayment.setContentsMargins(0, 0, 0, 0)
-        self.radioButtonCard = QRadioButton(self.widget1)
+        self.radioButtonCard = QRadioButton(self.layoutWidget1)
         self.radioButtonCard.setObjectName(u"radioButtonCard")
 
         self.verticalLayoutPayment.addWidget(self.radioButtonCard)
 
-        self.radioButtonNetBanking = QRadioButton(self.widget1)
+        self.radioButtonNetBanking = QRadioButton(self.layoutWidget1)
         self.radioButtonNetBanking.setObjectName(u"radioButtonNetBanking")
 
         self.verticalLayoutPayment.addWidget(self.radioButtonNetBanking)
 
-        self.radioButtonCashOnDelivery = QRadioButton(self.widget1)
+        self.radioButtonCashOnDelivery = QRadioButton(self.layoutWidget1)
         self.radioButtonCashOnDelivery.setObjectName(u"radioButtonCashOnDelivery")
 
         self.verticalLayoutPayment.addWidget(self.radioButtonCashOnDelivery)

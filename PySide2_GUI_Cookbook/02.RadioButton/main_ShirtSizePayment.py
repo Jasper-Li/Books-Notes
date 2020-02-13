@@ -32,7 +32,7 @@ class MainWindow(QDialog):
             payment = "Net Banking"
         elif self.ui.radioButtonCashOnDelivery.isChecked():
             payment = "Cash On Delivery"
-        self.ui.labelSelected.setText("Chosen shirt size: %s, payment method: %s"%(size, payment))
+        self.ui.labelSelected.setText("Chosen shirt size: %s,\npayment method: %s"%(size, payment))
 if __name__ == '__main__':
     app = QApplication([])
     window = MainWindow()
